@@ -1,0 +1,39 @@
+*{
+	box-sizing: border-box;
+}
+
+html , body{
+	
+}
+
+body{
+	margin: 0;
+}
+
+.header{
+	padding: 15px;
+	height: auto;
+	overflow: hidden;
+	background-color:lightgrey;
+}
+
+.header-nav{
+	font-family: serif;
+	font-weight:600;
+	width: 100%
+}
+
+.header-nav-a{
+	text-transform: capitalize;
+	padding-left: 35px;
+	width:7% ;
+	float: left;
+	text-decoration-line: none;
+}
+.header-icon{
+	float: right;
+	padding: 0px 20px 0px 0px
+}
+.header-icon i{
+	padding-left: 7px;
+}
