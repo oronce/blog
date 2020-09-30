@@ -115,6 +115,9 @@ body,html{
 	width: 300px;
 	margin: 0px 32px 0px 0px;
 	height: auto;
+	animation: anime-image 1.5s .7s forwards;
+	transform: translate(0,-20%);
+	opacity: 0.5
 }
 
 
@@ -133,11 +136,11 @@ body,html{
 }
 .article h2 a{
 	text-decoration-line: none;
-	color: #000;
+	color: #914949;
 	font-family: cardo,sans-serif;
 	font-weight: 700;
 	font-size: 36px;
-	text-align: initial; ;
+	text-align: initial; 
 }
 .article h2 a{
 	 
@@ -145,9 +148,12 @@ body,html{
 .article h2 a::after{
 	content: '';
 	display: block;
-	width: 100px;
-	height: 1px;
-	background-color: white;
+	width: 0px;
+	height: 2px;
+	background-color: #000;
+	margin-bottom: 15px;
+	animation: underlines 3s 1s forwards;
+	
 }
 .article p{
 	line-height: 26px;
@@ -285,6 +291,9 @@ p{
 }
 
 @media screen and (min-width: 1175px){
+	.header-icon a{
+		margin:0px 10px;
+	}
 	.top-bar{
 		display: flex;
 		justify-content: space-between;
@@ -305,6 +314,31 @@ p{
 		position: fixed;
 	}
 }
+
+@keyframes underlines {
+	from 0%{
+		width: 0px;
+		}
+
+		100%{	
+		width: 200px;
+		}
+}
+
+@keyframes anime-image {
+	from 0%{
+		transform: translate(0,-20%);
+		visibility: hidden;
+		opacity: 0.5
+		}
+
+		100%{
+			transform: translate(0%,0%);
+			visibility: visible;
+			opacity: 1;
+		}
+}
+
 
 /*
 @media screen and (max-width: 1175px){
